@@ -30,8 +30,8 @@ class ClassComponent extends Component<
 
   render() {
     return (
-      <>
-        <h2 className="text-center">Esempio componente a CLASSE</h2>
+      <div className="text-center my-5">
+        <h2>Esempio componente a CLASSE</h2>
         <h3 style={{ color: this.props.color || 'black' }}>
           Salutiamo {this.props.name}!
         </h3>
@@ -44,7 +44,7 @@ class ClassComponent extends Component<
         >
           CLICCATO: {this.state.clicked ? 'SI' : 'NO'}
         </Button>
-      </>
+      </div>
     )
   }
 }
