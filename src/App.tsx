@@ -6,6 +6,7 @@ import FunctionalComponent from './components/FunctionalComponent'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import NotFound from './components/NotFound'
 import MyNavbar from './components/MyNavbar'
+import FetchComponent from './components/FetchComponent'
 
 function App() {
   return (
@@ -36,6 +37,7 @@ function App() {
                   </>
                 }
               />
+              <Route path="/fetch" element={<FetchComponent />} />
               <Route path="*" element={<NotFound />} />
             </Routes>
           </Col>
